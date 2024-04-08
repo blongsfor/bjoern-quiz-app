@@ -1,3 +1,8 @@
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/header.css";
+@import "./components/navigation.css";
+
 * {
   box-sizing: border-box;
 }
@@ -13,53 +18,11 @@ h2 {
   text-align: center;
 }
 
-.question-card {
-  border: 2px solid;
-  border-radius: 25px;
-  text-align: center;
-}
-
 .question {
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
   background-color: aquamarine;
-}
-
-footer {
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 0px;
-}
-
-.answer {
-  display: none;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: bisque;
-  justify-content: center;
-}
-
-nav {
-  display: flex;
-}
-
-.footer-button {
-  background-color: blueviolet;
-  padding: 5px 14px;
-  border-radius: 25px;
-}
-
-.footer-menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 10%;
-  align-items: center;
 }
 
 ul {
