@@ -22,6 +22,9 @@ ul {
 
 .bookmark {
   display: flex;
-  justify-content: right;
-  size: 50%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: right;
+  top: -65px;
 }
