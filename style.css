@@ -26,9 +26,6 @@ h2 {
   background-color: aquamarine;
 }
 
-button {
-}
-
 footer {
   display: flex;
   align-items: flex-end;
@@ -45,6 +42,11 @@ footer {
   align-items: center;
   width: 100%;
   background-color: bisque;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
 }
 
 .footer-button {
@@ -55,6 +57,9 @@ footer {
 
 .footer-menu {
   display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  align-items: center;
 }
 
 ul {
