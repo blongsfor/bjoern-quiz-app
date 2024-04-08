@@ -2,7 +2,7 @@
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
-  background-color: aquamarine;
+  background-color: #e25e3e;
   margin: 5%;
 }
 
@@ -11,13 +11,14 @@
   border-radius: 25px;
   text-align: center;
   margin: 20px;
+  background-color: #ffbb5c;
 }
 
 .answer {
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
-  background-color: yellow;
+  background-color: #e25e3e;
   margin: 5%;
 }
 
@@ -46,4 +47,5 @@ ul {
   border-radius: 1px;
   border: 1px solid;
   border-radius: 5px;
+  background-color: #c63d2f;
 }
