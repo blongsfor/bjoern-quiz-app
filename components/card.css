@@ -19,3 +19,9 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.bookmark {
+  display: flex;
+  justify-content: right;
+  size: 50%;
+}
