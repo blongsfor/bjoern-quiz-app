@@ -30,9 +30,5 @@ nav {
   justify-content: space-around;
   gap: 10%;
   align-self: center;
-}
-
-a {
-  width: 2rem;
-  height: 2rem;
+  width: 100%;
 }
