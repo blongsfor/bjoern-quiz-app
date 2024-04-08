@@ -4,16 +4,19 @@
 
 h1 {
   font-size: 30px;
+  text-align: center;
 }
 
 h2 {
   border: 2px solid;
   border-radius: 25px;
+  text-align: center;
 }
 
 .question-card {
   border: 2px solid;
   border-radius: 25px;
+  text-align: center;
 }
 
 .question {
