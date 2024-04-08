@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+.question-card {
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+.question {
+  border: 2px solid;
+  border-color: red;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+button {
+}
