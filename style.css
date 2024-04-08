@@ -39,3 +39,25 @@ footer {
 .answer {
   display: none;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: bisque;
+}
+
+.footer-button {
+  background-color: blueviolet;
+  padding: 5px 14px;
+  border-radius: 25px;
+}
+
+.footer-menu {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
