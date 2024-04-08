@@ -3,6 +3,7 @@
   border-color: red;
   border-radius: 10px;
   background-color: aquamarine;
+  margin: 5%;
 }
 
 .question-card {
@@ -12,7 +13,11 @@
 }
 
 .answer {
-  display: none;
+  border: 2px solid;
+  border-color: red;
+  border-radius: 10px;
+  background-color: yellow;
+  margin: 5%;
 }
 
 ul {
