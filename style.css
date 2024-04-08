@@ -4,16 +4,19 @@
 
 h1 {
   font-size: 30px;
+  text-align: center;
 }
 
 h2 {
   border: 2px solid;
   border-radius: 25px;
+  text-align: center;
 }
 
 .question-card {
   border: 2px solid;
   border-radius: 25px;
+  text-align: center;
 }
 
 .question {
@@ -23,5 +26,43 @@ h2 {
   background-color: aquamarine;
 }
 
-button {
+footer {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0px;
+}
+
+.answer {
+  display: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: bisque;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+}
+
+.footer-button {
+  background-color: blueviolet;
+  padding: 5px 14px;
+  border-radius: 25px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
