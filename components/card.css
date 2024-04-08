@@ -34,3 +34,16 @@ ul {
   float: right;
   top: -65px;
 }
+
+.question-tag-list {
+  display: flex;
+  margin: 20px;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.question-tags {
+  border-radius: 1px;
+  border: 1px solid;
+  border-radius: 5px;
+}
