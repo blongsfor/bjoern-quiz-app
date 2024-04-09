@@ -7,9 +7,19 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #ff9b50;
+  padding-bottom: 7%;
+}
+
 h1 {
   font-size: 30px;
   text-align: center;
+  margin: 20px;
+  background-color: #ff9b50;
 }
 
 h2 {
@@ -17,7 +27,3 @@ h2 {
   border-radius: 25px;
   text-align: center;
 }
-
-
-
-

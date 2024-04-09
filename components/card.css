@@ -2,17 +2,24 @@
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
-  background-color: aquamarine;
+  background-color: #e25e3e;
+  margin: 5%;
 }
 
 .question-card {
   border: 2px solid;
   border-radius: 25px;
   text-align: center;
+  margin: 20px;
+  background-color: #ffbb5c;
 }
 
 .answer {
-  display: none;
+  border: 2px solid;
+  border-color: red;
+  border-radius: 10px;
+  background-color: #e25e3e;
+  margin: 5%;
 }
 
 ul {
@@ -22,6 +29,23 @@ ul {
 
 .bookmark {
   display: flex;
-  justify-content: right;
-  size: 50%;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: right;
+  top: -65px;
+}
+
+.question-tag-list {
+  display: flex;
+  margin: 20px;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.question-tags {
+  border-radius: 1px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #c63d2f;
 }
