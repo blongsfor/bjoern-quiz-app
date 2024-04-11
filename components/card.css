@@ -1,4 +1,4 @@
-.question {
+.question-card__question {
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
@@ -14,7 +14,7 @@
   background-color: #ffbb5c;
 }
 
-.answer {
+.question-card__answer {
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
@@ -27,7 +27,7 @@ ul {
   padding: 0;
 }
 
-.bookmark {
+.question-card__bookmark {
   display: flex;
   position: relative;
   width: 40px;
@@ -36,14 +36,14 @@ ul {
   top: -65px;
 }
 
-.question-tag-list {
+.question-card__tag-list {
   display: flex;
   margin: 20px;
   justify-content: flex-start;
   gap: 8px;
 }
 
-.question-tags {
+.question-card__tag-list__tag {
   border-radius: 1px;
   border: 1px solid;
   border-radius: 5px;
