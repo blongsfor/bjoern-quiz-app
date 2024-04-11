@@ -27,7 +27,7 @@ ul {
   padding: 0;
 }
 
-.bookmark {
+.question-card__bookmark {
   display: flex;
   position: relative;
   width: 40px;
