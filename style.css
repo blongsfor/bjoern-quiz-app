@@ -2,6 +2,7 @@
 @import "./components/card.css";
 @import "./components/header.css";
 @import "./components/navigation.css";
+@import "./components/header.css";
 
 * {
   box-sizing: border-box;
@@ -13,14 +14,6 @@ body {
   height: auto;
   background-color: #ff9b50;
   padding-bottom: 7%;
-}
-
-header {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px;
-  background-color: #ff9b50;
-  font-weight: 900;
 }
 
 h2 {
