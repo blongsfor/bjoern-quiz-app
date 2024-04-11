@@ -36,7 +36,7 @@ ul {
   top: -65px;
 }
 
-.question-tag-list {
+.question-card__tag-list {
   display: flex;
   margin: 20px;
   justify-content: flex-start;
