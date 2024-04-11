@@ -14,7 +14,7 @@
   background-color: #ffbb5c;
 }
 
-.answer {
+.question-card__answer {
   border: 2px solid;
   border-color: red;
   border-radius: 10px;
