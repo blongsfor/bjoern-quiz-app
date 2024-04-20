@@ -59,17 +59,38 @@ bookmarkImage6.addEventListener("click", () => {
   }
 });
 
-/* 
+/*--------------------------------------------------------------------
 
 2nd version also possible but only for first bookmark
 
 
 function changeBookmarkImages() {
-  let bookmarkImage = document.getElementById("bookmark-image");
+  const bookmarkImage = document.getElementsByClassName(
+    "question-card__bookmark"
+  );
   if (bookmarkImage.src.match("./resources/bookmark.png")) {
     bookmarkImage.src = "./resources/bookmark_filled.png";
   } else {
     bookmarkImage.src = "./resources/bookmark.png";
   }
 }
-*/
+
+------------------------------------------------------------------------*/
+let isClicked = false;
+
+function answerButton() {
+  const answer = document.querySelector('[data-js="question-card__answer"]');
+  const button = document.querySelector(
+    '[data-js="question-card__answer-button"]'
+  );
+  isClicked = answer.style.display === "none";
+  if (isClicked) {
+    answer.style.display = "block";
+    button.textContent = "Hide answer";
+  } else {
+    answer.style.display = "none";
+    button.textContent = "Show answer";
+  }
+}
+// only works for first answer again ...
+// ----------------------------------------------------------------------

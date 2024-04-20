@@ -20,6 +20,7 @@
   border-radius: 10px;
   background-color: #e25e3e;
   margin: 5%;
+  display: none;
 }
 
 ul {
