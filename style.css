@@ -21,3 +21,19 @@ h2 {
   border-radius: 25px;
   text-align: center;
 }
+
+.profile-page__profile-picture {
+  width: 400px;
+  margin: 10px;
+}
+
+.profile-page__profile-text {
+}
+
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+  gap: 5px;
+}
