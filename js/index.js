@@ -92,5 +92,5 @@ function answerButton() {
     button.textContent = "Show answer";
   }
 }
-// only works for first answer again ...
+// only works for first answer again ... not changing text
 // ----------------------------------------------------------------------
