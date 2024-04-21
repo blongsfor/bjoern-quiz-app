@@ -19,20 +19,6 @@ fieldset {
 
 input[type="text"] {
   display: flex;
-  width: 50%;
+  width: fit-content;
   align-self: center;
-}
-
-input[type="submit-tag"] {
-  display: flex;
-  width: 50%;
-  align-self: center;
-}
-
-#your-question {
-  height: 100px;
-}
-
-#your-answer {
-  height: 30px;
 }
