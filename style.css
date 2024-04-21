@@ -3,6 +3,7 @@
 @import "./components/header.css";
 @import "./components/navigation.css";
 @import "./components/header.css";
+@import "./components/submit.css";
 
 * {
   box-sizing: border-box;
