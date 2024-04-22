@@ -3,6 +3,13 @@ const form = document.querySelector('[data-js="form"]');
 const formSubmitButton = document.querySelector('[data-js="submit-Button"]');
 const formYourQuestion = document.querySelector('[data-js="your-question"]');
 const formYourAnswer = document.querySelector('[data-js="your-answer"]');
+const button = document.querySelector('[data-js="submit-Button"]');
+const questionCharacterCount = document.querySelector(
+  '[data-js="your-question-character-count"]'
+);
+const answerCharacterCount = document.querySelector(
+  '[data-js="your-answer-character-count"]'
+);
 
 function createNewQuestion(event) {
   event.preventDefault();
@@ -36,6 +43,20 @@ function createNewQuestion(event) {
   event.target.reset();
 }
 
-const button = document.querySelector('[data-js="submit-Button"]');
+button.addEventListener("submit", createNewQuestion);
 
-button.addEventListener("click", createNewQuestion);
+formYourQuestion.addEventListener("input", (event) => {
+  let maxLength = event.target.maxLength;
+  let count = event.target.value.length;
+  let remainingCharacters = maxLength - count;
+
+  questionCharacterCount.textContent = `${remainingCharacters} characters remaining`;
+});
+
+formYourAnswer.addEventListener("input", (event) => {
+  let maxLength = event.target.maxLength;
+  let count = event.target.value.length;
+  let remainingCharacters = maxLength - count;
+
+  answerCharacterCount.textContent = `${remainingCharacters} characters remaining`;
+});
