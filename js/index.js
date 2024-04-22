@@ -5,7 +5,7 @@ const bookmarkImage4 = document.getElementById("bookmark-image4");
 const bookmarkImage5 = document.getElementById("bookmark-image5");
 const bookmarkImage6 = document.getElementById("bookmark-image6");
 
-let toggle = true;
+//let toggle = true;
 // bookmarkImage1.addEventListener("click", () => {
 //   toggle = !toggle;
 //   if (toggle) {
@@ -77,9 +77,49 @@ bookmarkImages.forEach((bookmark) => {
   });
 });
 
-let isClicked = false;
+const answerButtons = document.querySelectorAll(
+  ".question-card__answer-button"
+);
 
-function answerButton() {
+answerButtons.forEach((answerButton) => {
+  answerButton.addEventListener("click", (event) => {
+    const closestAnswer = event.target
+      .closest(".question-card")
+      .querySelector(".question-card__answer");
+
+    if (closestAnswer.style.display === "none") {
+      closestAnswer.style.display = "block";
+      event.target.textContent = "Hide Answer"; // Access clicked button directly
+    } else {
+      closestAnswer.style.display = "none";
+      event.target.textContent = "Show Answer"; // Access clicked button directly
+    }
+  });
+});
+
+/*const answerButtons = document.querySelectorAll(
+  ".question-card__answer-button"
+);
+const answer = document.querySelector(".question-card__answer");
+
+answerButtons.forEach((answerButton) => {
+  answerButton.addEventListener("click", (event) => {
+    isClicked = answer.style.display === "none";
+    if (isClicked) {
+      answer.style.display = "block";
+      console.log("if", button);
+      button.textContent = "Hide answer";
+    } else {
+      answer.style.display = "none";
+      console.log("else");
+      button.textContent = "Show answer";
+    }
+  });
+});
+*/
+//let isClicked = false;
+
+/*function answerButton() {
   console.log(event);
   const answer = document.querySelector('[data-js="question-card__answer"]');
   const button = document.querySelector(
@@ -99,5 +139,6 @@ function answerButton() {
     button.textContent = "Show answer";
   }
 }
+*/
 // only works for first answer again ... not changing text
 // ----------------------------------------------------------------------

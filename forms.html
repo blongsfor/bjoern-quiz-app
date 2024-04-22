@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="/style.css" />
-    <script src="./js/form.js" defer></script>
+    <script src="/js/form.js" defer></script>
   </head>
   <body>
-    <main>
+    <main data-js="form-main">
       <header>Quiz App</header>
       <form data-js="form" class="submit-form">
         <fieldset>
@@ -16,6 +16,7 @@
           <label for="your-question">Your Question:</label>
           <textarea
             name="your-question"
+            data-js="your-question"
             id="your-question"
             cols="30"
             rows="5"
@@ -24,6 +25,7 @@
           <label for="your-answer">Your Answer:</label>
           <textarea
             name="your-answer"
+            data-js="your-answer"
             id="your-answer"
             cols="30"
             rows="3"
