@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="/style.css" />
+    <script src="./js/form.js" defer></script>
   </head>
   <body>
     <main>
       <header>Quiz App</header>
-      <form 
-      data-js="form"
-      class="submit-form">
+      <form data-js="form" class="submit-form">
         <fieldset>
-          <legend
-          class="submit-form-legend">Submit a question</legend>
+          <legend class="submit-form-legend">Submit a question</legend>
           <label for="your-question">Your Question:</label>
-          <textarea name="your-question" id="your-question" cols="30" rows="5"></textarea>
+          <textarea
+            name="your-question"
+            id="your-question"
+            cols="30"
+            rows="5"
+          ></textarea>
 
           <label for="your-answer">Your Answer:</label>
-          <textarea name="your-answer" id="your-answer" cols="30" rows="3"></textarea>
+          <textarea
+            name="your-answer"
+            id="your-answer"
+            cols="30"
+            rows="3"
+          ></textarea>
           <label for="tag">Tag:</label>
           <input type="text" name="submit-tag" id="submit-tag" />
-          <button type="submit">Submit</button>
+          <button type="submit" data-js="submit-Button">Submit</button>
         </fieldset>
+      </form>
     </main>
     <footer>
       <nav>
