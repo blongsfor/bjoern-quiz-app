@@ -20,29 +20,37 @@ function createNewQuestion(event) {
   console.log(data);
 
   const newQuestionSection = document.createElement("section");
-  newQuestionSection.setAttribute("class", "question-card");
+  newQuestionSection.classList.add("question-card");
 
   const img = document.createElement("img");
-  img.setAttribute("class", "question-card__bookmark");
+  img.classList.add("question-card__bookmark");
   img.setAttribute("src", "./resources/bookmark.png");
   img.setAttribute("alt", "bookmark");
 
-  const p = document.createElement("p");
-  p.setAttribute("class", "question-card__question");
+  const question = document.createElement("p");
+  question.classList.add("question-card__question");
 
   const button = document.createElement("button");
-  button.setAttribute("class", "question-card__answer-button");
+  button.classList.add("question-card__answer-button");
   button.setAttribute("data-js", "question-card__answer-button");
   button.textContent = "Show answer";
 
+  const answer = document.createElement("p");
+  question.classList.add("question-card__answer");
+
+  const tag = document.createElement("p");
+  tag.classList.add("question-card__tag-list__tag");
+
   formMain.append(newQuestionSection);
   newQuestionSection.append(img);
-  newQuestionSection.append(p);
+  newQuestionSection.append(question);
+  newQuestionSection.append(answer);
   newQuestionSection.append(button);
 
   event.target.reset();
 }
 
+// -------- Character Count ---------------------------
 button.addEventListener("submit", createNewQuestion);
 
 formYourQuestion.addEventListener("input", (event) => {
