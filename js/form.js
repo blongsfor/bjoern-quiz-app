@@ -11,6 +11,7 @@ const answerCharacterCount = document.querySelector(
   '[data-js="your-answer-character-count"]'
 );
 
+console.log("hallo");
 function createNewQuestion(event) {
   event.preventDefault();
 
@@ -49,9 +50,9 @@ function createNewQuestion(event) {
 
   event.target.reset();
 }
+button.addEventListener("submit", createNewQuestion);
 
 // -------- Character Count ---------------------------
-button.addEventListener("submit", createNewQuestion);
 
 formYourQuestion.addEventListener("input", (event) => {
   let maxLength = event.target.maxLength;
