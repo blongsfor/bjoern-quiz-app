@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
     <main>
@@ -16,15 +17,24 @@
           class="question-card__bookmark"
           src="./resources/bookmark.png"
           alt="bookmark"
+          id="bookmark-image1"
         />
         <p class="question-card__question">
           Originally given the Japanese title “Puckman”, what 1980s arcade game
           was inducted into the Guinness Book of Records as the "Most Successful
           Coin-Operated Game" in 2005?
         </p>
-        <button class="question-card__answer-button">Show Answer</button>
+        <button
+          type="button"
+          class="question-card__answer-button"
+          data-js="question-card__answer-button"
+        >
+          Show Answer
+        </button>
 
-        <p class="question-card__answer">Pac-Man</p>
+        <p class="question-card__answer" data-js="question-card__answer">
+          Pac-Man
+        </p>
 
         <ul class="question-card__tag-list">
           <li class="question-card__tag-list__tag">#trivia</li>
@@ -39,6 +49,7 @@
           class="question-card__bookmark"
           src="./resources/bookmark.png"
           alt="bookmark"
+          id="bookmark-image2"
         />
         <p class="question-card__question">
           What Will Wright created video game series released in 2000 (with
@@ -46,7 +57,12 @@
           characters to mundane things like eating, sleeping, and cleaning their
           houses?
         </p>
-        <button class="question-card__answer-button">Show Answer</button>
+        <button
+          class="question-card__answer-button"
+          data-js="question-card__answer-button"
+        >
+          Show Answer
+        </button>
 
         <p class="question-card__answer">The Sims</p>
 
@@ -63,6 +79,7 @@
           class="question-card__bookmark"
           src="./resources/bookmark_filled.png"
           alt="bookmark"
+          id="bookmark-image3"
         />
         <p class="question-card__question">
           What is thought to be the first video game, created in 1958 and
@@ -85,6 +102,7 @@
           class="question-card__bookmark"
           src="./resources/bookmark.png"
           alt="bookmark"
+          id="bookmark-image4"
         />
         <p class="question-card__question">
           Which video game console released in 2006 pioneered the use of motion
@@ -107,6 +125,7 @@
           class="question-card__bookmark"
           src="./resources/bookmark_filled.png"
           alt="bookmark"
+          id="bookmark-image5"
         />
         <p class="question-card__question">
           In 2014, Google partnered with Game Freak and Nintendo as part of an
@@ -131,6 +150,7 @@
           class="question-card__bookmark"
           src="./resources/bookmark.png"
           alt="bookmark"
+          id="bookmark-image6"
         />
         <p class="question-card__question">
           What 2009 game, developed by Mojang, is an open sandbox in which
@@ -167,6 +187,11 @@
                 src="./resources/bookmark_transparent.png"
                 alt="Bookmarks"
             /></a>
+          </li>
+          <li class="footer-button">
+            <a href="./forms.html">
+              <img class="footer-image" src="./resources/add.png" alt="add" />
+            </a>
           </li>
           <li class="footer-button">
             <a href="./profile.html"

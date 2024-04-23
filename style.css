@@ -3,6 +3,7 @@
 @import "./components/header.css";
 @import "./components/navigation.css";
 @import "./components/header.css";
+@import "./components/submit.css";
 
 * {
   box-sizing: border-box;
@@ -20,4 +21,23 @@ h2 {
   border: 2px solid;
   border-radius: 25px;
   text-align: center;
+}
+
+.profile-page__profile-picture {
+  width: 400px;
+  margin: 10px;
+}
+
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+  gap: 5px;
+}
+
+button {
+  margin: auto;
+  width: fit-content;
+  padding: 5px 10px;
 }
