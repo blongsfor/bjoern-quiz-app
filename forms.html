@@ -9,14 +9,14 @@
     <script src="./js/form.js" defer></script>
   </head>
   <body>
-    <main data-js="form-main">
+    <main>
       <header>Quiz App</header>
       <form data-js="form" class="submit-form">
         <fieldset>
           <legend class="submit-form-legend">Submit a question</legend>
           <label for="your-question">Your Question:</label>
           <textarea
-            name="your-question"
+            name="yourQuestion"
             data-js="your-question"
             id="your-question"
             cols="30"
@@ -31,7 +31,7 @@
           </p>
           <label for="your-answer">Your Answer:</label>
           <textarea
-            name="your-answer"
+            name="yourAnswer"
             data-js="your-answer"
             id="your-answer"
             cols="30"
@@ -42,10 +42,11 @@
             150 characters remaining
           </p>
           <label for="submit-tag">Tag:</label>
-          <input type="text" name="submit-tag" id="submit-tag" />
-          <button type="submit" data-js="submit-Button">Submit</button>
+          <input type="text" name="submitTag" id="submit-tag" />
+          <button data-js="submit-Button">Submit</button>
         </fieldset>
       </form>
+      <section data-js="form-output"></section>
     </main>
     <footer>
       <nav>
