@@ -51,10 +51,10 @@ function createNewQuestion(event) {
 
     if (closestAnswer.style.display === "none") {
       closestAnswer.style.display = "block";
-      event.target.textContent = "Hide Answer"; // Access clicked button directly
+      event.target.textContent = "Hide Answer";
     } else {
       closestAnswer.style.display = "none";
-      event.target.textContent = "Show Answer"; // Access clicked button directly
+      event.target.textContent = "Show Answer";
     }
   });
   //newQuestionSection.append(img);
