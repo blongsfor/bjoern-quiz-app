@@ -48,7 +48,7 @@ function createNewQuestion(event) {
     const closestAnswer = event.target
       .closest(".question-card")
       .querySelector(".question-card__answer");
-
+    // use toggle instead
     if (closestAnswer.style.display === "none") {
       closestAnswer.style.display = "block";
       event.target.textContent = "Hide Answer";
